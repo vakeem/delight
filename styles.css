@@ -1,0 +1,621 @@
+:root {
+    --redcolor-: #F5585C;
+    --orangecolor-: #FF8421;
+    --offblack-: #252B42;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+#navbar i {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .9rem;
+    border: 3px solid var(--redcolor-);
+    border-radius: 50px;
+    padding: 1px .7rem 1px 1px;
+    color: var(--redcolor-);
+}
+
+
+#navbar img {
+    object-fit: contain;
+    width: 50px;
+    height: auto;
+}
+
+#navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+#navbar .nav-menu li a {
+    color: var(--offblack-);
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+#navbar ul .current-page {
+    color: var(--redcolor-);
+}
+
+#hero {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background: url(https://lh3.googleusercontent.com/75JY4zGMy33ZMMk-WPuh57E07XTZrSHFs_iUo5GtYCi9aTgrzT0QSCtz5YPR_U2VFcyFjjkxDuXGZr1JBFVTrSjqR-5XJEn4jmSxoIE);
+    background-size: cover;
+    color: white;
+    margin-bottom: 600px;
+    animation: fade-bottom 1s ease-in;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 700;
+}
+
+.hero-top p {
+    font-size: 3.4rem;
+    max-width: 900px;
+    text-align: center;
+    color: var(--offblack-);
+}
+
+.hero-top p span {
+    color: var(--redcolor-);
+}
+
+.hero-bot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    z-index: 3;
+}
+
+.hero-bot p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.hero-stores {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.hero-stores a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.hero-stores .hero-android {
+    background-color: var(--redcolor-);
+    border: 2.5px solid #F04B3D;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+}
+
+.hero-stores .hero-ios {
+    background-color: var(--offblack-);
+    border: 2.5px solid #ffffff60;
+    padding: 1rem 1.5rem;
+    border-radius: 30px; 
+}
+
+.phones {
+    position: absolute;
+}
+
+.phone1 {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -220px;
+    overflow: hidden;
+}
+
+.phone2 {
+    position: absolute;
+    top: 260px;
+    left: -20px;
+}
+
+#app-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem 0;
+    border-top: 4px solid #00000030;
+    overflow: hidden;
+}
+
+#app-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--offblack-);
+}
+
+.app-panel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.app-panel img {
+    max-width: 300px;
+    height: 500px;
+    object-fit: cover;
+ }
+
+.app-works-2 {
+    display: none;
+}
+
+.apps-half {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apps-half h3 {
+    color: var(--orangecolor-);
+    font-weight: 700;
+}
+
+.app-head {
+    color: var(--offblack-);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+ 
+.app-sub {
+    color: #00000090;
+    font-weight: 500;
+}
+
+#dl-bg {
+    width: 100%;
+    height: 450px;
+    background-color: #252B42;
+}
+
+#dl-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#dl-section h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.dl-sub {
+    letter-spacing: .1rem;
+}
+
+.dl-stores {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.dl-stores a {
+    color: white;
+    font-size: 1.3rem;
+    padding: .9rem 1.4rem;
+    border-radius: 30px;
+}
+
+.dl-android {
+    background-color: var(--redcolor-);
+    border: 2px solid var(--redcolor-);
+}
+
+.dl-ios {
+    background-color: #00000050;
+    border: 2px solid #ffffff50;
+}
+
+#footer {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.5rem 1rem;
+}
+
+#footer img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    gap: .9rem;
+    border: 3px solid var(--redcolor-);
+    border-radius: 50px;
+    padding: 1px .7rem 1px 1px;
+    color: var(--redcolor-);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    gap: 2rem;
+    color: var(--redcolor-);
+    font-size: 2rem;
+}
+
+.copyright {
+    color: #00000090;
+    font-weight: 700;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 750px) {
+    #navbar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-top p {
+        color: var(--offblack-);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: row;
+        position: sticky;
+        background-color: white;
+        display: flex;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+    }
+
+    #navbar .nav-menu {
+        display: none;
+    }
+
+    #navbar i {
+        display: initial;
+        font-size: 2rem;
+        color: var(--redcolor-);
+    }
+
+    #hero {
+        background: none;
+        background-color: var(--offblack-);
+        gap: 1.5rem;
+        padding: 0 1rem;
+        animation: fade-bottom 1s ease-in;
+    }
+
+    .hero-top p {
+        font-size: 2.4rem;
+        color: white;
+    }
+
+    .hero-stores {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .phone1 {
+        width: 451px;
+        height: auto;
+        object-fit: cover;
+        left: -300px;
+    }
+
+    .phone2 {
+        width: 219px;
+        height: auto;
+        object-fit: cover;
+        left: 20px;
+    }
+
+    #app-section {
+        text-align: center;
+        gap: 3rem;
+    }
+
+    #app-section h2{
+        font-size: 2rem;
+    }
+
+    .app-panel {
+        flex-direction: column-reverse;
+    }
+
+    .app-head {
+        font-size: 2.5rem;
+    }
+
+    .app-sub {
+        font-size: 1.3rem;
+    }
+
+    .apps-half {
+        width: 300px;
+        gap: 1.5rem;
+    }
+
+    .app-works-1 {
+        display: none;
+    }
+
+    .app-works-2 {
+        display: initial;
+        width: 100%;
+    }
+
+    #dl-section {
+        text-align: center;
+        background: none;
+    }
+
+    #dl-section h3, .dl-sub {
+        width: 400px;
+        line-height: 1.5rem;
+    }
+
+    .dl-stores {
+        flex-direction: column;
+    }
+
+    #footer {
+        margin-bottom: 2rem;
+    }
+
+    #footer  .copyright{
+        position: absolute;
+        margin-top: 7.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .phone1 {
+        display: none;
+    }
+
+    .phone2 {
+        display: none;
+    }
+    
+    #hero {
+        height: fit-content;
+        padding: 2rem 1rem;
+        margin: 0;
+    }
+
+    .phones {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    .logo2 {
+        width: fit-content;
+    }
+
+    #dl-bg h3 {
+        width: 100%;
+    }
+
+    .dl-sub {
+        width: 100%;
+    }
+
+    .app-head {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .app-sub {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #navbar {
+        padding: 1rem;
+    }
+
+    #navbar i {
+        font-size: 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .apps-half {
+        width: 100%;
+    }
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.shown {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 5;
+    margin: 0;
+    top: 0;
+    padding: 2rem;
+}
+
+.shown ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.shown ul li {
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--offblack-);
+}
+
+.shown a {
+    padding: 1rem;
+}
+
+.shown a:visited{
+    color: inherit;
+}
+
+.shown a:hover{
+    color: var(--redcolor-);
+}
+
+.hidden {
+    display: none;
+}
+
+#close-button {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--offblack-);
+}
+
+#close-button:hover {
+    color: var(--redcolor-);
+}
